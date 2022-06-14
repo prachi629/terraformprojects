@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1"
   access_key = "*****************"
   secret_key = "****************************"
 }
@@ -20,7 +20,7 @@ resource "aws_vpc" "prac-1" {
 resource "aws_subnet" "prac1-subnet" {
     vpc_id = aws_vpc.prac-1.id
     cidr_block = var.myfirstvar[0].cidr_block
-    availability_zone = "ap-south-1a"
+    availability_zone = "us-east-1a"
     tags={
       Name = var.myfirstvar[0].Name
   } 
@@ -30,7 +30,7 @@ resource "aws_subnet" "prac1-subnet" {
 resource "aws_subnet" "prac2-subnet" {
     vpc_id = aws_vpc.prac-1.id
     cidr_block = var.myfirstvar[1].cidr_block
-    availability_zone = "ap-south-1a"
+    availability_zone = "us-east-1a"
     tags={
       Name = var.myfirstvar[0].Name
   } 
