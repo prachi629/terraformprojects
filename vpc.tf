@@ -1,7 +1,7 @@
 provider "aws" {
   region = "ap-south-1"
-  access_key = "AKIA5F7RHPF5UVATQTRB"
-  secret_key = "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"
+  access_key = "*****************"
+  secret_key = "****************************"
 }
 
 variable "myfirstvar" {
